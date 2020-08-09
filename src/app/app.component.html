@@ -7,3 +7,11 @@
 <app-servers></app-servers>
 <p  appBasicHighlight>This is styled by basic directive!!! </p>
 <p  appBetterDirective [defaultColor]="'blue'" [highlightColor]="'orange'">This is styled by better directive!!! </p>
+<button class="btn btn-primary" (click)="onClick()">Change DOM</button>
+<div *appUnless="value">
+    <p>This is custom structural directive</p>
+</div>
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="10">Value is 10</div>
+    <div *ngSwitchDefault>Default  case</div>
+</div>

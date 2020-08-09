@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Niru';
+  value :boolean  = true;
+  onClick(){
+    return this.value=!this.value;
+  }
+  num:number =10;
 }
